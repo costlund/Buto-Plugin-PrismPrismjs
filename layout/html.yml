@@ -1,0 +1,45 @@
+settings:
+  path: 'html/innerHTML/body/innerHTML'
+  rewrite_globals:
+    -
+      key: 'sys/settings/plugin/prism/prismjs/enabled'
+      value: true
+    
+content:
+  doctype:
+    type: text
+    text: '<!DOCTYPE html>'
+  html:
+    type: html
+    attributezzz:
+      lang: en
+    innerHTML:
+      head:
+        type: head
+        innerHTML:
+          meta1:
+            type: meta
+            attribute:
+              charset: 'UTF-8'
+          meta2:
+            type: meta
+            attribute:
+              name: 'viewport'
+              content: 'width=device-width, initial-scale=1.0'
+          prism_prismjs:
+            settings:
+              disabled: false
+            type: widget
+            data:
+              plugin: 'prism/prismjs'
+              method: include               
+    
+      body:
+        type: body
+        innerHTML: 'body...'
+
+
+#<meta charset="UTF-8">
+#<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    

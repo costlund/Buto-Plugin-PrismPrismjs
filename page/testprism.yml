@@ -1,0 +1,17 @@
+settings:
+  layout:
+    - html
+content:
+  test:
+    type: pre
+    innerHTML:
+      -
+        type: code
+        attribute:
+          class: 'language-yaml'
+        innerHTML: |
+          test: 3323
+          test2:
+            - sfdsf
+            - 3233
+            
