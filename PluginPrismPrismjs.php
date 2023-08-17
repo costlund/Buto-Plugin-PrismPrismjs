@@ -57,7 +57,7 @@ class PluginPrismPrismjs{
 
 
   public function page_testprism(){
-    wfArray::set($GLOBALS, 'sys/layout_path', '/plugin/prism/prismjs/layout');
+    wfGlobals::setSys('layout_path', '/plugin/prism/prismjs/layout');
     $filename = wfArray::get($GLOBALS, 'sys/app_dir').'/plugin/prism/prismjs/page/testprism.yml';
     $page = wfFilesystem::loadYml($filename);
     wfDocument::mergeLayout($page);
